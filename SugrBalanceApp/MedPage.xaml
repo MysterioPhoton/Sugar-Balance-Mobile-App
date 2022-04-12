@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SugrBalance_App.MedPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Medication"
+                FontAttributes="Bold"   
+                FontSize="50"  
+                HorizontalOptions="CenterAndExpand"
+            />
+            <Entry Placeholder="Enter Medication Name"></Entry>
+            <Label Text="Time" FontSize="20"></Label>
+            <TimePicker></TimePicker>
+            <Label Text="Date" FontSize="20"></Label>
+            <DatePicker></DatePicker>
+            <Label Text="Dosage" FontSize="20"></Label>
+            <Entry Placeholder="Enter  the Dose of Medicine "></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
