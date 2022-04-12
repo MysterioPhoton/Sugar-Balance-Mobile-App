@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SugrBalance_App.RegPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="First Name"></Entry>
+                <Entry Placeholder="Middle Name"></Entry>
+                <Entry Placeholder="Last Name"></Entry>
+            </StackLayout>
+
+            <Label Text="Sex"   />
+            <RadioButton Content="Male" />
+            <RadioButton Content="Female" />
+            <Entry Placeholder="Age"></Entry>
+            <Entry Placeholder="Height"></Entry>
+            <Entry Placeholder="Blood Type"></Entry>
+            <Label Text="Date Of Birth"></Label>
+            <DatePicker></DatePicker>
+            <Entry Placeholder="Email"></Entry>
+            <Entry Placeholder="Emergency Contact"></Entry>
+            <Entry Placeholder="Password"></Entry>
+            <Button Text="Sign Up"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
