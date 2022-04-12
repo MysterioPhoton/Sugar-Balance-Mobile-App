@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SugrBalance_App.BloodPress">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Blood Pressure"
+                FontAttributes="Bold"   
+                FontSize="50"   
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Enter Today's Data"></Entry>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
