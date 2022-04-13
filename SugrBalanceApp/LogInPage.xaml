@@ -1,9 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SugrBalance_App.LogInPage">
     <ContentPage.Content>
+        
         <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <StackLayout>
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                    <Label Text="SugrBalance" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="36"/>
+                </Frame>
+            </StackLayout>
             <Entry Placeholder="Email"></Entry>
             <Entry Placeholder="Password"></Entry>
             <Button Text="Log In"></Button>
