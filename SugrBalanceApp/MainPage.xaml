@@ -8,9 +8,16 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to SugrBalance!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Please Log In or Register to continue" FontSize="Title" Padding="30,10,30,10"/>
-        <Button Text="Log in" />
-        <Button Text="Resgistration"  />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Please Log In or Register to continue" FontSize="Title" Padding="30,10,30,10" />
+            <Button Clicked="goToLogin" Grid.Row="1" Text="Log in" />
+            <Button Clicked="goToRegPage" Grid.Row="2" Text="Resgistration"  />
+        </Grid>
+       
     </StackLayout>
 </ContentPage>
-
