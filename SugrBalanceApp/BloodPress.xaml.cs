@@ -16,5 +16,9 @@ namespace SugrBalance_App
         {
             InitializeComponent();
         }
+        public async void goToBPTrend(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new BPTrend());
+        }
     }
 }
