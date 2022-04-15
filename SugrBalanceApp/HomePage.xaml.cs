@@ -16,5 +16,19 @@ namespace SugrBalance_App
         {
             InitializeComponent();
         }
+
+        public async void goToBloodpress(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new BloodPress());
+        }
+        public async void goToBloodsugar(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new BloodSug());
+        }
+        public async void goToMedpage(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new MedPage());
+        }
+      
     }
 }
