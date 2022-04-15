@@ -10,9 +10,9 @@
                     <Label Text="SugrBalance" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="36"/>
                 </Frame>
             </StackLayout>
-            <Entry Placeholder="Email"></Entry>
-            <Entry Placeholder="Password"></Entry>
-            <Button Text="Log In"></Button>
+            <Entry Text="{Binding Email}" Placeholder="Email"></Entry>
+            <Entry Text="{Binding Password}" Placeholder="Password"></Entry>
+            <Button Clicked="goToHomepage" Command="{Binding SubmitCommand}" Text="Log In"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
