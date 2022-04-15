@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,11 @@ namespace SugrBalance_App
         public LogInPage()
         {
             InitializeComponent();
+        }
+
+        public async void goToHomepage(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new HomePage());
         }
     }
 }
