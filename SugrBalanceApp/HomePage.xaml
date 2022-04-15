@@ -12,9 +12,9 @@
             <Button Text="Call Emergency Contact" WidthRequest="150"
                     HorizontalOptions="EndAndExpand"></Button>
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="bp" Text="Blood Pressure"/>
-                <Button Text="Blood Sugar" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
-                <Button Text="Medication" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
+                <Button Clicked="goToBloodpress" x:Name="bp" Text="Blood Pressure"/>
+                <Button Clicked="goToBloodsugar" Text="Blood Sugar" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
+                <Button Clicked="goToMedpage" Text="Medication" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
                 <!--https://stackoverflow.com/questions/47357595/how-to-position-3-buttons-in-stacklayout-equal-width?msclkid=29597e3fbaa511ec9ddb5ccae1f122f0-->
             </StackLayout>
         </StackLayout>
