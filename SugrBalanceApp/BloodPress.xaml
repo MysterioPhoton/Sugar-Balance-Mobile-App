@@ -8,8 +8,14 @@
                 FontAttributes="Bold"   
                 FontSize="50"   
                 HorizontalOptions="CenterAndExpand" />
-            <Entry Placeholder="Enter Today's Data"></Entry>
-            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Entry Grid.Row="0" VerticalTextAlignment="Start" Placeholder="Enter Today's Data"></Entry>
+                <Button Clicked="goToBPTrend"  Grid.Row="1" Text="Trend" HorizontalOptions="Center"></Button>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
