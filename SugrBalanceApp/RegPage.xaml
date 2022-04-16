@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SugrBalance_App.RegPage">
+             x:Class="SugrBalance_App.HomePage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
-            <Label Text="Registration"
+        <StackLayout>
+            <Label Text="Home Page"
                 FontAttributes="Bold"
-                FontSize="40"
-                HorizontalOptions="CenterAndExpand"/>
+                FontSize="Large"/>
+            <Button Text="Call NHS" WidthRequest="150"
+                    HorizontalOptions="EndAndExpand"></Button>
+            <Button Text="Call Emergency Contact" WidthRequest="150"
+                    HorizontalOptions="EndAndExpand"></Button>
             <StackLayout Orientation="Horizontal">
-                <Entry Placeholder="First Name"></Entry>
-                <Entry Placeholder="Middle Name"></Entry>
-                <Entry Placeholder="Last Name"></Entry>
+                <Button Clicked="goToBloodpress" x:Name="bp" Text="Blood Pressure"/>
+                <Button Clicked="goToBloodsugar" Text="Blood Sugar" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
+                <Button Clicked="goToMedpage" Text="Medication" WidthRequest="{Binding Path=Width, Source={x:Reference bp}}"/>
+                <!--https://stackoverflow.com/questions/47357595/how-to-position-3-buttons-in-stacklayout-equal-width?msclkid=29597e3fbaa511ec9ddb5ccae1f122f0-->
             </StackLayout>
-
-            <Label Text="Sex"   />
-            <RadioButton Content="Male" />
-            <RadioButton Content="Female" />
-            <Entry Placeholder="Age"></Entry>
-            <Entry Placeholder="Height"></Entry>
-            <Entry Placeholder="Weight"></Entry>
-            <Entry Placeholder="Blood Type"></Entry>
-            <Label Text="Date Of Birth"></Label>
-            <DatePicker></DatePicker>
-            <Entry Placeholder="Email"></Entry>
-            <Entry Placeholder="Emergency Contact"></Entry>
-            <Entry Placeholder="Password"></Entry>
-            <Button Clicked="goToLogin" Text="Sign Up"></Button>
-
+            <Button Text="Log Out"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
