@@ -4,6 +4,10 @@
              x:Class="SugrBalance_App.RegPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <Label Text="Registration"
+                FontAttributes="Bold"
+                FontSize="40"
+                HorizontalOptions="CenterAndExpand"/>
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="First Name"></Entry>
                 <Entry Placeholder="Middle Name"></Entry>
