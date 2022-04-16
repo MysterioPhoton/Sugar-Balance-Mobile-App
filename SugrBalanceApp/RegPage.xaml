@@ -15,6 +15,7 @@
             <RadioButton Content="Female" />
             <Entry Placeholder="Age"></Entry>
             <Entry Placeholder="Height"></Entry>
+            <Entry Placeholder="Weight"></Entry>
             <Entry Placeholder="Blood Type"></Entry>
             <Label Text="Date Of Birth"></Label>
             <DatePicker></DatePicker>
