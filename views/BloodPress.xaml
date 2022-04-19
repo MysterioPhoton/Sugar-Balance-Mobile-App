@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:SugrBalance_App.ViewModels"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:local= "clr-namespace:Microcharts.Samples.Forms"
+             x:Class="SugrBalance_App.BloodPress">
+
+    <ContentPage.BindingContext>
+        <viewmodels:BloodPressViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Blood Pressure"
+                FontAttributes="Bold"   
+                FontSize="50"   
+                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Entry Text="{Binding BP}" Grid.Row="0" VerticalTextAlignment="Start" Placeholder="Enter Today's Data"></Entry>
+                <Button Command="{Binding AddNewBP}" Grid.Row="1" Text="Submit" HorizontalOptions="Center"></Button>
+            </Grid>
+            <Label Text="Trend"
+                
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Padding="30,60,30,0"
+                FontAttributes="Bold"
+                FontSize="40"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="sysButton" Clicked="sysButton_Clicked" Text="Systolic" />
+                <Button x:Name="diaButton" Clicked="diaButton_Clicked" Text="Diastolic"/>
+            </StackLayout>
+
+            <StackLayout Padding="10" BackgroundColor="Transparent">
+                <microcharts:ChartView HeightRequest="200" x:Name="chartView" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
