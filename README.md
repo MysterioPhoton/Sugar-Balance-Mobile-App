@@ -10,4 +10,5 @@ their  medication. And they won't be skipping a dose.***
 
 ## codes are in SugrBalance_App ##
 
-## video link- https://livecoventryac-my.sharepoint.com/:f:/g/personal/biswasp3_uni_coventry_ac_uk/Ek2gKG_avGJOoJ9e_tuwsyYBJ23g3xkYHxSg-DfOLAsa_A?e=2nrqJy ##
+## video link-  onedrive: https://livecoventryac-my.sharepoint.com/:f:/g/personal/biswasp3_uni_coventry_ac_uk/Ek2gKG_avGJOoJ9e_tuwsyYBJ23g3xkYHxSg-DfOLAsa_A?e=2nrqJy ##
+## youtube: https://youtu.be/fAJO8GR08m8 ##
